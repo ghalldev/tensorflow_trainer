@@ -1,0 +1,13 @@
+server:
+  port: 8095
+
+  spring:
+    application: tensorflow-java
+
+# object detection     - https://www.kaggle.com/models/tensorflow/efficientdet         - efficientdet-tensorflow2-d0-v1
+# image classification - https://www.kaggle.com/models/google/mobilenet-v2/tensorFlow2 - mobilenet-v2-tensorflow2-035-128-classification-v2
+tensorflow:
+  objectdetection.path: src/main/resources/models/efficientdet-tensorflow2-d0-v1
+  iris.path: src/main/resources/models/iris
+    
+logging.level.root: INFO
